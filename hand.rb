@@ -21,11 +21,11 @@ end
 # Shuffle Deck
 deck.shuffle!
 
-# each player has 14 cards from deck randomly
+# Player1 has 15 cards from deck randomly
 x = 0
 player1 = []
 
-until x == 14  do
+until x == 15  do
 
     card = deck.sample
     player1 << card
@@ -73,3 +73,21 @@ sortedCardPlay1 << diamondSet.sort!
 sortedCardPlay1 << spadeSet.sort!
 sortedCardPlay1 << clubSet.sort!
 sortedCardPlay1 << jokerSet.sort!
+
+print sortedCardPlay1
+
+if heartSet.length < 3
+    print "Heart set is invalid"
+end
+
+if diamondSet.length < 3
+    print "Diamond set is invalid"
+end
+
+if spadeSet.length < 3
+    print "Spade set is invalid"
+end
+
+if clubSet.length < 3
+    print "Club set is invalid"
+end
